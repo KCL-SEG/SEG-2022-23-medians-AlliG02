@@ -15,6 +15,7 @@ while True:
     try:
         print("Enter a list of numbers separated by commas: ")
         numbers = [float(value) for value in input().split(",")]
+        numbers.sort()
         median = findMedian(numbers)
         print(f'The median is {median}')
     except ValueError:
@@ -22,3 +23,4 @@ while True:
     else:
         break
 print(numbers)
+
